@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #eee;
+    }
+
+    .i {
+      display: grid;
+      align-content: center;
+      margin: 0px 20px;
+      /* height: 100vh; */
+    }
+
+    .top {
+      font-size: 42px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 40px;
+      margin-bottom: 60px;
+    }
+
+    .main div img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'i1 i1 i2 i3 i4 i5'
+        'i1 i1 i6 i7 i8 i9';
+      gap: 5px;
+    }
+
+    .i1 {
+      grid-area: i1;
+    }
+
+    .i2 {
+      grid-area: i2;
+    }
+
+    .i3 {
+      grid-area: i3;
+    }
+
+    .i4 {
+      grid-area: i4;
+    }
+
+    .i5 {
+      grid-area: i5;
+    }
+
+    .i6 {
+      grid-area: i6;
+    }
+
+    .i7 {
+      grid-area: i7;
+    }
+
+    .i8 {
+      grid-area: i8;
+    }
+
+    .i9 {
+      grid-area: i9;
+    }
+
+    @media (min-width: 768px)and(max-width:1024px) {
+      .i {
+        align-content: start;
+      }
+
+      .main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+          'i1 i1 i2'
+          'i1 i1 i3'
+          'i4 i5 i6'
+          'i7 i8 i9';
+      }
+    }
+      @media(max-width:767px) {
+        .i {
+          align-content: start;
+        }
+
+        .main {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas:
+            'i1 i1'
+            'i1 i1'
+            'i2 i3'
+            'i4 i5'
+            'i6 i7'
+            'i8 i9';
+        }
+      }
+  </style>
+</head>
+
+<body>
+  <div class="i">
+    <div class="top">
+      <h1>Grid Ggllery</h1>
+    </div>
+    <div class="main">
+      <div class="i1">
+        <img src="/images/blog-post-01.jpg" alt="">
+      </div>
+      <div class="i2">
+        <img src="/images/blog-post-02.jpg" alt="">
+      </div>
+      <div class="i3">
+        <img src="/images/blog-post-03.jpg" alt="">
+      </div>
+      <div class="i4">
+        <img src="/images/blog-post-04.jpg" alt="">
+      </div>
+      <div class="i5">
+        <img src="/images/blog-post-05.jpg" alt="">
+      </div>
+      <div class="i6">
+        <img src="/images/blog-post-06.jpg" alt="">
+      </div>
+      <div class="i7">
+        <img src="/images/blog-post-07.jpg" alt="">
+      </div>
+      <div class="i8">
+        <img src="/images/blog-post-08.jpg" alt="">
+      </div>
+      <div class="i9">
+        <img src="/images/blog-post-09.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

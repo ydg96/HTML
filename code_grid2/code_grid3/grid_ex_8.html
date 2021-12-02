@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Google Web Font */
+    /* @import url('https://fonts.googleapis.com/css'); */
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      grid-template-columns: 250px 1fr 250px;
+      grid-template-rows: 100px 600px 1fr 100px 100px;
+      display: grid;
+      grid-template-areas:
+        'header header header'
+        'welcome welcome welcome'
+        'banner main aside'
+        'banner main aside'
+        'footer footer footer';
+    }
+
+    .container div {
+      display: grid;
+      border: 1px solid #000;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      font-size: 20px;
+
+
+    }
+
+    .header {
+      grid-area: header;
+      background-color: darkkhaki;
+    }
+
+    .welcome {
+      grid-area: welcome;
+      background-size: cover;
+
+    }
+
+    .banner {
+      grid-area: banner;
+    }
+
+    .main {
+      grid-area: main;
+    }
+
+    .aside {
+      grid-area: aside;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: darkkhaki;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 600px 100px 1fr 100px 100px;
+        grid-template-areas:
+          'header'
+          'welcome'
+          'banner'
+          'main'
+          'aside'
+          'footer';
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">header</div>
+    <div class="welcome">
+      <a href="#">
+        <img src="/img/welcome-image.jpg" alt="" height="600">
+      </a>
+    </div>
+    <div class="banner">banner</div>
+    <div class="main">
+      <h2>This is Main Content</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam molestias velit impedit magnam. Quas rem
+        odit,
+        repellat,
+        tempora eveniet esse, nobis optio exercitationem alias quae numquam atque ea voluptates perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Totam aliquid inventore natus eos veritatis voluptate fugiat in quasi odio excepturi quae,
+        est magnam obcaecati? At repellat a dolores magnam reiciendis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore natus asperiores modi vero error.
+        Tempora facilis quos doloribus illum blanditiis,
+        officiis ipsa non quam enim saepe at laudantium excepturi.
+      </p>
+    </div>
+    <div class="aside">aside</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+
+</html>

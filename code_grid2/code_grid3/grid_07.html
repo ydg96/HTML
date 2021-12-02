@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      display: grid;
+      border: 5px solid #000;
+      grid-template-areas:
+        'header header header header'
+        'menu main main aside'
+        'menu main main aside'
+        'menu main main aside'
+        'menu main main aside'
+        'menu main main aside'
+        'footer footer footer footer';
+      height: 100vh;
+      gap: 10px;
+
+    }
+
+    .parent div {
+      text-align: center;
+      font-size: 30px;
+      border: 1px solid #000;
+      background-color: skyblue;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .menu {
+      grid-area: menu;
+    }
+
+    .main {
+      grid-area: main;
+    }
+
+    .aside {
+      grid-area: aside;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="header">header</div>
+    <div class="menu">menu</div>
+    <div class="main">main</div>
+    <div class="aside">aside</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+
+</html>

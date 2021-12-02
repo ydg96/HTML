@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .frame {
+      width: 960px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, minmax(200px, auto));
+      gap: 10px;
+    }
+
+    .frame div {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.20);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <div class="s1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+    <div class="s2">Lorem ipsum dolor sit amet.</div>
+    <div class="s3">Lorem, ipsum dolor.</div>
+    <div class="s4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="s5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, repudiandae!</div>
+    <div class="s6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam autem nam magnam.</div>
+  </div>
+</body>
+
+</html>

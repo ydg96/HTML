@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .i {
+      height: 100vh;
+      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        'o t t'
+        'o fi th'
+        'o fi th'
+        'f f th'
+
+      ;
+    }
+
+    .i>div {
+      background-color: darkkhaki;
+      border: 1px solid #000;
+      text-align: center;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .o {
+      grid-area: o;
+      display: grid;
+      grid-template-areas:
+        's1 s2'
+        's3 s3';
+    }
+
+    .o>div {
+      background-color: skyblue;
+      margin: 0;
+      display: grid;
+      border: 1px solid #000;
+      justify-self: stretch;
+      align-self: stretch;
+    }
+
+    .t {
+      grid-area: t;
+    }
+
+    .th {
+      grid-area: th;
+    }
+
+    .f {
+      grid-area: f;
+    }
+
+    .fi {
+      grid-area: fi;
+    }
+    .o div :nth-child(1){
+      grid-area: s1;
+    }
+     .o div :nth-child(2){
+      grid-area: s2;
+    }
+     .o div :nth-child(3){
+      grid-area: s3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="i">
+    <div class="o">
+      <div class="s1">sub1</div>
+      <div class="s2">sub2</div>
+      <div class="s3">sub3</div>
+    </div>
+    <div class="t">2</div>
+    <div class="th">3</div>
+    <div class="f">4</div>
+    <div class="fi">5</div>
+  </div>
+</body>
+
+</html>

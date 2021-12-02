@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      border: 5px solid #000;
+      background-color: khaki;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+    }
+
+    .parent div {
+      border: 2px solid #000;
+      margin: auto;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      background-color: deepskyblue;
+    }
+
+    .parent>.item {
+      background-color: crimson;
+      /* grid-column: 1 / 3;
+      grid-row: 1 /3; */
+      /* grid-column: 2 / 4;
+      grid-row: 2 / 4; */
+      /* grid-column: 1 / 3;
+      grid-row: 3/5; */
+    }
+
+    #t-m {
+      text-align: center;
+    }
+
+    .t-m1 {
+      margin: auto;
+    }
+
+    li {
+      float: right;
+
+    }
+
+    .m-m {
+      display: flex;
+    }
+
+    .m-m div {
+      text-align: center;
+      margin: auto;
+      font-size: 20px;
+      font-style: italic;
+      color: steelblue;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="t-m">
+    <div>
+      <h1>동근이네 샵</h1>
+      <header>
+        <ul class="t-m1">
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">장바구니</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="m-m">
+      <div><a href="https://www.google.com">BEST</a></div>
+      <div><a href="https://www.naver.com">신상품</a></div>
+      <div><a href="https://www.naver.com">1 + 1</a></div>
+      <div><a href="https://www.naver.com">당일배송</a></div>
+      <div><a href="https://www.naver.com">ACC</a></div>
+      <div><a href="https://www.naver.com">해외직구</a></div>
+    </div>
+  </div>
+  </div>
+  <div class="parent">
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+    <div>
+      <img src="/img_html.png" alt="ㄱ">
+      <p>상품명</p>
+    </div>
+  </div>
+</body>
+
+</html>
